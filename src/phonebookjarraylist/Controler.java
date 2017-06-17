@@ -6,6 +6,7 @@
 package phonebookjarraylist;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Scanner;
 
 /**
@@ -40,7 +41,11 @@ public class Controler {
     }
     
     public void afiseazaContact(){
-        
+        Iterator itr  = listaContacte.iterator();
+        while(itr.hasNext()){
+            Object con = itr.next();
+            System.out.println(con.toString()+" ");
+        }
     }
     
     public void meniu(){
