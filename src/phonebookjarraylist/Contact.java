@@ -5,11 +5,13 @@
  */
 package phonebookjarraylist;
 
+import java.io.Serializable;
+
 /**
  *
  * @author mhcrnl
  */
-public class Contact {
+public class Contact implements Serializable {
     
     private int nrCrt;
     private String nume;
