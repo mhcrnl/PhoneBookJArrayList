@@ -33,10 +33,12 @@ public class Controler {
         email = in.next();
         System.out.println("Introduceti numele companiei: ");
         companie = in.next();
-        
-        contact = new Contact(nume, prenume, telefon, email, companie);
-        listaContacte.add(contact);
-        
+        try{
+            contact = new Contact(nume, prenume, telefon, email, companie);
+            listaContacte.add(contact);
+        }catch(Exception ex){
+            System.out.println(ex.getMessage());
+        }
         
     }
     
@@ -69,7 +71,7 @@ public class Controler {
                     break;
                 case 2:
                     afiseazaContact();
-                    
+                    //Contact.test1();
                     break;
                 case 4:
                         

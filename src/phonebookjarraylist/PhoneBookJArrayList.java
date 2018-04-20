@@ -16,8 +16,9 @@ public class PhoneBookJArrayList {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Controler con = new Controler ();
-        con.meniu();
+        Contact.test1();
+        //Controler con = new Controler ();
+        //con.meniu();
     }
     
 }
